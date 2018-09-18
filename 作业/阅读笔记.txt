@@ -1,0 +1,27 @@
+operator:
+	该operator模块导出一组与Python的内部运算符相对应的高效函数。并以它们支持的丰富比较运算符命名：
+		operator.lt（a，b ）
+		operator.le（a，b ）
+		operator.eq（a，b ）
+		operator.ne（a，b ）
+		operator.ge（a，b ）
+		operator.gt（a，b ）
+		operator.__lt__（a，b ）
+		operator.__le__（a，b ）
+		operator.__eq__（a，b ）
+		operator.__ne__（a，b ）
+		operator.__ge__（a，b ）
+		operator.__gt__（a，b ）
+
+循环语句可能有一个else子句， 
+  当循环通过列表耗尽或条件变为false时终止，输出else子句中的语句，
+  但是当循环被break语句终止时不执行else子句
+  continue---继续循环的下一次迭代
+
+pass语句---当语法需要语句但程序不需要操作时，可以使用它
+关键字def引入了一个函数定义。它必须后跟函数名称和带括号的形式参数列表。构成函数体的语句从下一行开始，并且必须缩进
+return语句返回一个函数的值。 return没有表达式参数返回None。从函数的末尾掉落也会返回None。
+
+默认值仅评估一次。当默认值是可变对象（列表、字典等大多数实例）时，这会产生差异。
+
+在函数调用中，关键字参数必须遵循位置参数。传递的所有关键字参数必须与函数接受的参数之一匹配，并且它们的顺序并不重
