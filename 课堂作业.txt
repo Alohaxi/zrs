@@ -1,0 +1,116 @@
+1.def years():
+    
+	name=input("your name")
+    
+	year=int(input("your age"))
+    
+	years=2018-year+100
+   
+	print("%s到%d年100岁!" %(name,years))
+
+2.def test():
+	number = int(input("输入一个整数："))
+	if(number%2 == 0):
+		print("整数！！！")
+	else:
+		print("奇数！！！")
+
+3.def judge(list):
+	flag = 0
+	for i in list:
+		if i=="":
+			flag = 0
+		else:
+			flag = 1
+		if flag:
+			print("不为空")
+		else:
+			print("为空")
+
+4.def x1():
+	
+	a=[]
+	
+	print("输入所有你要平方的数字,结束就输入空格")
+	
+	while True:
+		
+		b=input("输入数字")
+		
+		if b.isdigit():
+			
+			a.append(int(b)**2)
+			
+			continue
+		
+		elif b.isspace():
+			
+			
+			return a
+		
+		else:
+			
+			print("你输入的不是数字,异常,将返回None")
+
+			return None
+			
+5.
+from functools import reduce
+def shu():
+	a = []
+	while True:
+		
+		b = input("输入数字：")
+		if b.isdigit():
+			a.append(int(b))
+			continue
+		else:
+			return a
+
+6.def shuruqi():
+	
+	a=[]
+	
+	print("输入数字，不是数字就当结束")
+	
+	while True:
+		
+		b=input("输入数字")
+		
+		if b.isdigit():
+			
+			a.append(int(b))
+			
+			continue
+		
+		else:
+			
+			return a
+
+7.def sfe(lst1,lst2):
+	
+	a=[]
+	
+	for a1 in lst1:
+		
+		for a2 in lst2:
+			
+			if a1==a2:
+				
+				a.append(a1)
+	
+				return a	
+
+8.def max(lst):
+	
+	max1=0
+	
+	for a in lst:
+		
+		if a>max1:
+			
+			max1=a
+			
+			continue
+	
+		return max1	
